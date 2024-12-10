@@ -1,5 +1,5 @@
 {
-  "name": "micky-s-space",
+  "name": "micky-space",
   "type": "module",
   "version": "1.0.0",
   "description": "Micky",
@@ -9,6 +9,7 @@
     "node": "^18.20.0 || >=20.0.0"
   },
   "scripts": {
+    "start": "vuepress dev docs",
     "docs:dev": "vuepress dev docs",
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
     "docs:build": "vuepress build docs --clean-cache --clean-temp",
