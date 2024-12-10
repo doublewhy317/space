@@ -3,7 +3,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/space/',
+  base: '/micky-space/',
   lang: 'zh-CN',
   title: 'Micky`s Space',
   description: 'Micky',
