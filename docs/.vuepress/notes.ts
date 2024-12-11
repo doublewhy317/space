@@ -1,88 +1,94 @@
 import { defineNoteConfig, defineNotesConfig } from "vuepress-theme-plume";
 
-const demoNote = defineNoteConfig({
-  dir: "demo",
-  link: "/demo",
-  sidebar: ["", "foo", "bar"],
-});
-const utilityFuncNote = defineNoteConfig({
-  dir: "utilityFunc",
-  link: "/notes/",
+const notebookNote = defineNoteConfig({
+  dir: "notebook",
+  link: "/notebook",
   sidebar: [
     {
-      text: "工具函数",
-      prefix: "/tools",
-      icon: "/icon/tools-fn.svg",
-      items: [
-        {
-          text: "foo",
-          link: "/notes/tools/1al76ym4/",
-          icon: "https://cn.vuejs.org/images/logo.png",
-        },
-        {
-          text: "bar",
-          link: "/notes/tools/c4rvbbli/",
-          icon: "ph:info-light",
-        },
-        /* "/notes/tools/",
-      "/notes/tools/array",
-      "/notes/tools/date",
-      "/notes/tools/number",
-      "/notes/tools/object",
-      "/notes/tools/string",
-      "/notes/tools/type",
-      "/notes/tools/url",
-      "/notes/tools/validate", */
-      ],
+      text: "2024年12月",
+      prefix: "202412/",
+      icon: "/icon/tools/tools-fn.svg",
+      items: [{ text: "日记", link: "a5maelbg/" }],
+    },
+  ],
+});
+const fragmentNote = defineNoteConfig({
+  dir: "fragment",
+  link: "/notes/fragment/",
+  sidebar: [
+    {
+      text: "js",
+      prefix: "js/",
+      icon: "/icon/technology/JavaScript.svg",
+      items: [{ text: "js", link: "6hucugpj/" }],
     },
     {
-      text: "工具函数",
-      prefix: "/notes/tools",
-      icon: "/icon/tools-fn.svg",
+      text: "ts",
+      prefix: "ts/",
+      icon: "/icon/technology/TypeScript.svg",
       items: [
-        {
-          text: "foo",
-          link: "1al76ym4",
-          icon: "/icon/tools-fn.svg",
-        },
+        { text: "常见类型", link: "jb6d7o0u/" },
+        { text: "随手记", link: "ndiq8atb/" },
       ],
     },
   ],
 });
-const noteNote = defineNoteConfig({
-  dir: "utilityFunc",
-  link: "/notes/",
+const memoNote = defineNoteConfig({
+  dir: "memo",
+  link: "/notes/memo/",
+  sidebar: "auto",
+});
+const interviewTopicNote = defineNoteConfig({
+  dir: "interviewTopic",
+  link: "/notes/interviewTopic/",
   sidebar: [
     {
-      text: "js",
-      prefix: "/notes/notes/js",
-      icon: "/icon/tools-fn.svg",
+      text: "技术相关",
+      prefix: "tech/",
+      icon: "/icon/comm/technology.svg",
       items: [
-        {
-          text: "js",
-          link: "/notes/notes/js/6hucugpj/",
-        },
+        { text: "Js 面试题", link: "c5rp0tr1/" },
+        { text: "React 面试题", link: "btkmkqra/" },
       ],
     },
+    // {
+    //   text: "项目亮点",
+    //   prefix: "ts/",
+    //   icon: "/icon/TypeScript.svg",
+    //   items: [
+    //     { text: "常见类型", link: "jb6d7o0u/" },
+    //     { text: "随手记", link: "ndiq8atb/" },
+    //   ],
+    // },
+  ],
+});
+const utilityFuncNote = defineNoteConfig({
+  dir: "utilityFunc",
+  link: "/notes/utilityFunc/",
+  sidebar: [
     {
-      text: "ts",
-      prefix: "/notes/notes/ts/",
-      icon: "/icon/TypeScript.svg",
-      items: [
-        {
-          text: "常见类型",
-          link: "/notes/notes/ts/jb6d7o0u/",
-        },
-        {
-          text: "随手记",
-          link: "/notes/notes/ts/ndiq8atb/",
-        },
-      ],
+      text: "tools",
+      prefix: "jsFn/",
+      icon: "/icon/tools/tools-fn.svg",
+      items: [{ text: "工具函数", link: "mzoijdbo/" }],
+    },
+    {
+      text: "css",
+      prefix: "css/",
+      icon: "/icon/technology/css.svg",
+      items: [{ text: "视觉格式化模型", link: "5o3uvhmp/" }],
     },
   ],
 });
 export const notes = defineNotesConfig({
   dir: "notes",
   link: "/",
-  notes: [demoNote, utilityFuncNote, noteNote],
+  // notes: [fragmentNote, utilityFuncNote],
+  notes: [
+    utilityFuncNote,
+    interviewTopicNote,
+    memoNote,
+    fragmentNote,
+    notebookNote,
+  ],
 });

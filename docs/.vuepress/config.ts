@@ -1,12 +1,12 @@
-import { viteBundler } from '@vuepress/bundler-vite'
-import { defineUserConfig } from 'vuepress'
-import { plumeTheme } from 'vuepress-theme-plume'
+import { viteBundler } from "@vuepress/bundler-vite";
+import { defineUserConfig } from "vuepress";
+import { plumeTheme } from "vuepress-theme-plume";
 
 export default defineUserConfig({
-  base: '/micky-space/',
-  lang: 'zh-CN',
-  title: 'Micky`s Space',
-  description: 'Micky',
+  base: "/micky-space/",
+  lang: "zh-CN", 
+  title: "Micky`s Space",
+  description: "Micky",
 
   bundler: viteBundler(),
 
@@ -14,8 +14,8 @@ export default defineUserConfig({
     // 添加您的部署域名
     // hostname: 'https://your_site_url',
     // your git repo url
-    docsRepo: '',
-    docsDir: 'docs',
+    docsRepo: "",
+    docsDir: "docs",
 
     plugins: {
       /**
@@ -23,7 +23,7 @@ export default defineUserConfig({
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
        */
       // shiki: {
-           // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
+      // 强烈建议预设代码块高亮语言，插件默认加载所有语言会产生不必要的时间开销
       //   languages: ['shell', 'bash', 'typescript', 'javascript'],
       // },
 
@@ -33,11 +33,11 @@ export default defineUserConfig({
        */
       markdownEnhance: {
         demo: true,
-      //   include: true,
-      //   chart: true,
-      //   echarts: true,
-      //   mermaid: true,
-      //   flowchart: true,
+        //   include: true,
+        //   chart: true,
+        //   echarts: true,
+        //   mermaid: true,
+        //   flowchart: true,
       },
 
       /**
@@ -78,4 +78,4 @@ export default defineUserConfig({
       // },
     },
   }),
-})
+});

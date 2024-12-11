@@ -1,10 +1,10 @@
 ---
 title: 备忘录
 createTime: 2024/12/10 21:25:37 
-permalink: /notes/0jg3eb43/
+permalink: /notes/memo/0jg3eb43/
 ---
 
-## 标题 2
+## 备忘录
 
 ### 标题 3
 
