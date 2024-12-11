@@ -6,16 +6,16 @@ import { notes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: '/personal/head.jpg',
 
   appearance: true,
 
   profile: {
-    avatar: 'https://theme-plume.vuejs.press/plume.png',
-    name: 'Micky`s Space',
-    description: 'Micky',
-    // circle: true,
-    // location: '',
+    avatar: '/personal/head.jpg',
+    name: 'Micky',
+    description: 'Micky`s Space',
+    circle: true,
+    location: '四川-成都',
     // organization: '',
   },
 

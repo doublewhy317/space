@@ -12,7 +12,7 @@ export const navbar = defineNavbarConfig([
       { text: "面试题", icon: "/icon/interview.svg", link: "/notes/interviewTopic/README.md" },
       { text: "备忘录", icon: "/icon/memo.svg", link: "/notes/memo/README.md" },
       { text: "工具", icon: "/icon/tools-fn.svg", link: "/notes/utilityFunc/README.md" },
-      { text: "工具", link: "/notes/utilityFunc/README.md" },
+      { text: "知识碎片", icon: "/icon/pen.svg", link: "/notes/notes/README.md" },
     ],
   },
   {

@@ -1,7 +1,8 @@
 ---
 title: 工具
 createTime: 2024/12/10 21:25:37 
-permalink: /notes/tools/iodlr0ut/
+# permalink: /notes/tools/iodlr0ut/
+permalink: /notes/tools/
 ---
 
 ## 标题 2
