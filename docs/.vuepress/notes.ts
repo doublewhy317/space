@@ -2,13 +2,16 @@ import { defineNoteConfig, defineNotesConfig } from "vuepress-theme-plume";
 
 const notebookNote = defineNoteConfig({
   dir: "notebook",
-  link: "/notebook",
+  link: "/notes/notebook",
   sidebar: [
     {
-      text: "2024年12月",
-      prefix: "202412/",
+      text: "2024年",
+      prefix: "2024/",
       icon: "/icon/tools/tools-fn.svg",
-      items: [{ text: "日记", link: "a5maelbg/" }],
+      items: [
+        { text: "生日快乐", link: "uxd4da4g/" },
+        { text: "日记", link: "7wcis77b/" },
+      ],
     },
   ],
 });

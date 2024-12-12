@@ -4,7 +4,7 @@ import { plumeTheme } from "vuepress-theme-plume";
 
 export default defineUserConfig({
   base: "/micky-space/",
-  lang: "zh-CN", 
+  lang: "zh-CN",
   title: "Micky`s Space",
   description: "Micky",
 
@@ -76,6 +76,14 @@ export default defineUserConfig({
       //   reactionsEnabled: true,
       //   inputPosition: 'top',
       // },
+    },
+    blog: {
+      include: ["blog/**/*.md"],
+
+      //  通过 glob string 配置排除的文件，相对于 源目录
+      exclude: ["**/README.md"],
+      // 每页显示的文章数量
+      pagination: 15,
     },
   }),
 });
