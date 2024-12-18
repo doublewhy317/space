@@ -1,7 +1,10 @@
-.vp-content .container .content {
-    /* border-radius: 10px; */
-    backdrop-filter: blur(10px);
-    background-color: rgb(255 255 255 / 20%);
-    border-radius: 20px;
-    padding: 40px 80px;
+.vp-content.is-home .vp-home .container .content {
+  /* border-radius: 10px; */
+  backdrop-filter: blur(10px);
+  background-color: rgb(255 255 255 / 30%);
+  border-radius: 20px;
+  padding: 25px 40px;
+}
+.vp-content.is-home .vp-home .container .content .hero-name {
+  font-size: 36px;
 }
