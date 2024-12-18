@@ -4,7 +4,7 @@ import CustomComponent from './theme/components/Custom.vue'
 import HomePage from '../../src/components/HomePage.vue'
 import './styles/index.css'
 
-// import './theme/styles/custom.css'
+import './theme/styles/custom.css'
 
 export default defineClientConfig({
   enhance({ app }) {

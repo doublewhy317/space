@@ -1,4 +1,7 @@
 :root {
+  /* 自定义变量 */
+  --sidebar-indent: 12px;
+
   /** 主题颜色 */
 
   /*
@@ -47,4 +50,8 @@
   --vp-c-text-2: rgba(235, 235, 245, 0.6);
   --vp-c-text-3: rgba(235, 235, 245, 0.38);
   */
+}
+
+.sidebar-item.level-0 > .items {
+  padding-left: var(--sidebar-indent);
 }

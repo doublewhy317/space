@@ -73,7 +73,10 @@ const utilityFuncNote = defineNoteConfig({
       text: "tools",
       prefix: "jsFn/",
       icon: "/icon/tools/tools-fn.svg",
-      items: [{ text: "工具函数", link: "mzoijdbo/" }],
+      items: [
+        { text: "工具函数", link: "mzoijdbo/" },
+        { text: "工具函数2", link: "i0q1ukvp/" },
+      ],
     },
     {
       text: "css",
